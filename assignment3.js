@@ -12,11 +12,19 @@ function kilometerToMeter(kilometer) {
 
 //function for calculating budget
 function budgetCalculator(watch, mobile, laptop) {
-    var watchPrice = watch * 50;
+    if(watch<0 || mobile<0 || laptop<0)
+    {
+        return 'Quantity can not be negative';
+    }
+    else
+    {
+        var watchPrice = watch * 50;
     var mobilePrice = mobile * 100;
     var laptopPrice = laptop * 500;
     var totalCost = watchPrice + mobilePrice + laptopPrice;
     return totalCost;
+    }
+    
 }
 
 
@@ -47,4 +55,19 @@ function hotelCost(stayedFor) {
     return totalCost;
 }
 
-//
+//function for largest name
+function megaFriend(friendNames)
+{
+    var longestName = friendNames[0];
+    for(var i=0;i<friendNames.length;i++)
+    {
+        var newElement = friendNames[i];
+        if(newElement.length>longestName.length)
+        {
+            longestName = newElement;
+        }
+    }
+    return longestName;
+    
+}
+var friendNames =['Siam','Mimu','Shakawat','Sazedur Rahman Siam','Samuels'];

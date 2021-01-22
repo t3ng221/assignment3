@@ -44,6 +44,5 @@ function hotelCost(stayedFor) {
     totalCost = firstPackage + secondPackage + thirdPackage;
     return totalCost;
 }
-console.log(hotelCost(35));
 
 //

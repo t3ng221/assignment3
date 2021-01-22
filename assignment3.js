@@ -9,7 +9,6 @@ function kilometerToMeter(kilometer) {
     return meter;
 }
 
-
 //function for calculating budget
 function budgetCalculator(watch, mobile, laptop) {
     if(watch<0 || mobile<0 || laptop<0)
@@ -23,10 +22,8 @@ function budgetCalculator(watch, mobile, laptop) {
     var laptopPrice = laptop * 500;
     var totalCost = watchPrice + mobilePrice + laptopPrice;
     return totalCost;
-    }
-    
+    }    
 }
-
 
 //function for total hotel cost
 function hotelCost(stayedFor) {
@@ -68,6 +65,5 @@ function megaFriend(friendNames)
         }
     }
     return longestName;
-    
 }
 var friendNames =['Siam','Mimu','Shakawat','Sazedur Rahman Siam','Samuels'];
